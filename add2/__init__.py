@@ -39,5 +39,5 @@ def addrand():
     int1 = random.randint(1, 20)
     int2 = random.randint(1, 20)
     total = int1 + int2
-    check50.run("./add2").stdin(int1).stdin(int2).stdout(total + "\n").exit()
+    check50.run("./add2").stdin(str(int1)).stdin(str(int2)).stdout(str(total) + "\n").exit()
     
