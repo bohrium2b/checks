@@ -9,5 +9,5 @@ $ ./add2
 ```
 # Testing
 Make sure your program will respond to the following tests:
-- 2 + 4 = 6
-- 3 + 6 = 9
+- inputting 2 and 4 returns 6
+- inputting 3 and 6 returns 9
