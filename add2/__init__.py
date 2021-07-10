@@ -21,3 +21,13 @@ def adds24():
 def adds36():
     """Adds 3 and 6 correctly (prints 9)"""
     check50.run("./add2").stdin("3").stdin("6").stdout("9\n").exit()
+
+@check50.check(compiles)
+def adds36():
+    """Adds 4 and 3 correctly (prints 7)"""
+    check50.run("./add2").stdin("4").stdin("3").stdout("7\n").exit()
+    
+@check50.check(compiles)
+def adds36():
+    """Adds 2 and 1 correctly (prints 3)"""
+    check50.run("./add2").stdin("2").stdin("1").stdout("3\n").exit()
