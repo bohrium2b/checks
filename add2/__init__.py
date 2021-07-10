@@ -1,5 +1,6 @@
 import check50
 import check50.c
+from random import *
 
 @check50.check()
 def exists():
@@ -23,11 +24,20 @@ def adds36():
     check50.run("./add2").stdin("3").stdin("6").stdout("9\n").exit()
 
 @check50.check(compiles)
-def adds36():
+def adds43():
     """Adds 4 and 3 correctly (prints 7)"""
     check50.run("./add2").stdin("4").stdin("3").stdout("7\n").exit()
     
 @check50.check(compiles)
-def adds36():
+def adds21():
     """Adds 2 and 1 correctly (prints 3)"""
     check50.run("./add2").stdin("2").stdin("1").stdout("3\n").exit()
+    
+@check50.check(compiles)
+def addrand():
+    """Adds 2 random numbers correctly"""
+    int1 = randint(1, 20)
+    int2 = randint(1, 20)
+    total = int1 + int2
+    check50.run("./add2").stdin(int1).stdin(int2).stdout(total + "\n").exit()
+    
