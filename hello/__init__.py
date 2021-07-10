@@ -1,5 +1,10 @@
+import check50.*
 import check50
-import check50.c
+
+@check50.check()
+def exists():
+    """hello.c exists"""
+    check50.exists("hello.c")
 
 
 @check50.check()
