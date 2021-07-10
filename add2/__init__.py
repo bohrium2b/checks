@@ -1,6 +1,6 @@
 import check50
 import check50.c
-from random import *
+import random
 
 @check50.check()
 def exists():
@@ -36,8 +36,8 @@ def adds21():
 @check50.check(compiles)
 def addrand():
     """Adds 2 random numbers correctly"""
-    int1 = randint(1, 20)
-    int2 = randint(1, 20)
+    int1 = random.randint(1, 20)
+    int2 = random.randint(1, 20)
     total = int1 + int2
     check50.run("./add2").stdin(int1).stdin(int2).stdout(total + "\n").exit()
     
