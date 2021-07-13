@@ -25,13 +25,3 @@ def returns_correct_output():
 def check_out(output, correct):
     if output == correct:
         return
-
-    output = [line for line in output.splitlines() if line != ""]
-    correct = correct.splitlines()
-
-    help = None
-    if len(output) == len(correct):
-        if all(ol.rstrip() == cl for ol, cl in zip(output, correct)):
-            help = "Did you add trailing whitespace?"
-
-    raise check50.Mismatch(correct, output, help=help)
