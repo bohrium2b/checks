@@ -25,3 +25,5 @@ def returns_correct_output():
 def check_out(output, correct):
     if output == correct:
         return
+    else:
+        raise check50.mismatch(correct, output, help=None)
