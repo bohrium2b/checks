@@ -24,7 +24,7 @@ def returns_correct_output():
 
 def check_out(output, correct):
     if output == correct:
-        return 0
+        return
 
     output = [line for line in output.splitlines() if line != ""]
     correct = correct.splitlines()
