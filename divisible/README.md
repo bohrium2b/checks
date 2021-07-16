@@ -13,7 +13,7 @@ You **don't** need `<cs50.h>`!
  - We define a variable `____` with type `float`. You should replace this with a better (**more descriptive**) variable name.
  - We then set `____` to the current number (`i`) divided by `6`. **You may find this to be helpful when you are filling in the `if` statement below.** 
  - We then set an if loop. **You have to fill in the condition though.** The condition should check if **`i` divided by 6 is a whole number/integer**.
- - If `i` divided by 6 is a whole number above is true, then we print out `i`.
+ - If `i` divided by 6 is a whole number above is true, then we print out `i` (**you need to do this part on your own**).
 
 
 # Implementation Details
