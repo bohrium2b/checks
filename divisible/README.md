@@ -8,7 +8,12 @@ You **don't** need `<cs50.h>`!
 2. Execute `wget https://github.com/daltongit/checks/raw/c/divisible/divisible.c` to download the distribution code
 
 # Understanding
-**You should fill in all of the blanks and everywhere there is a `TODO`.**  
+**You should fill in all of the blanks and add code under the `TODO`'s. If you want to add or delete lines of code, you can.** 
+ - The program starts by repeating between every number from 1 to 100. You should determine if the `for` loop should be `<=` or `<` 100 though.
+ - We define a variable `____` with type `float`. You should replace this with a better (**more descriptive**) variable name.
+ - We then set `____` to the current number (`i`) divided by `6`. **You may find this to be helpful when you are filling in the condition for the `if` conditional underneath it.** 
+ - We then set an if loop. **You have to fill in the condition though.** The condition should check if the number is a whole number/integer.
+ - If `i` divided by 6 is a whole number above is true, then we print out `i`.
 
 
 # Implementation Details
