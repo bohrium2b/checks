@@ -1,6 +1,6 @@
 # Divisible
 In divisible, your task is to print out every number between `1` and `100` that is divisible
-by 6. The first numbers in the sequence should be `6`, `12`, `18` ...
+by 6. The first numbers in the sequence should be `6`, `12`, `18` ...  
 You **don't** need `<cs50.h>`!
 
 # Implementation Details
