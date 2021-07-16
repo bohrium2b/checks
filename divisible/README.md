@@ -19,7 +19,8 @@ You **don't** need `<cs50.h>`!
 # Implementation Details
 How should you check if a number is divisible by six? Well, you can repeat through every number
 and check, **does dividing it by six output a whole number**?
-If so, then that number is divisible by 6, and you should `print` it out.
+If so, then that number is divisible by 6, and you should `print` it out.  
+In general, you should fill in the sections marked with a `TODO` and the bits that have a line (`___`)
 
 # Testing
 Run
