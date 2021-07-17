@@ -8,7 +8,7 @@ int main(void)
         // TODO: Check if number divided by six is a whole number
         // TODO: Replace blank variable name with more descriptive variable name
         float ____ = 0.0;
-        ____ = i / 6;
+        ____ = (float) i / 6;
         
         // TODO: Fill in condition
         // Is i divisible by 6?
