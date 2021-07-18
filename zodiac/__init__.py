@@ -25,6 +25,11 @@ def returns1924rat():
 
 
 @check50.check(compiles)
+def rejects1920():
+    check50.run("./zodiac").stdin("1920").reject()
+    
+    
+@check50.check(compiles)
 def returnsdog():
   """Zodiac returns a zodiac sign of dog when given 2006"""
   check50.run("./zodiac").stdin("2006").stdout("(Your zodiac sign is the)? [Dd]og.?\n?")
