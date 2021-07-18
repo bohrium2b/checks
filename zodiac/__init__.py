@@ -33,20 +33,20 @@ def rejects1920():
 @check50.check(compiles)
 def returnsdog():
   """Zodiac returns a zodiac sign of dog when given 2006"""
-  check50.run("./zodiac").stdin("2006").stdout("(Your zodiac sign is the)? [Dd]og.?\n?")
+  check50.run("./zodiac").stdin("2006").stdout("(Your zodiac sign is the)? [Dd]og.?\n?", regex=True)
 
 @check50.check(compiles)
 def returnsgoat():
   """Zodiac returns a zodiac sign of goat when given 1943"""
-  check50.run("./zodiac").stdin("1943").stdout("(Your zodiac sign is the)? [Gg]oat.?\n?")
+  check50.run("./zodiac").stdin("1943").stdout("(Your zodiac sign is the)? [Gg]oat.?\n?", regex=True)
 
 @check50.check(compiles)
 def returnshorse():
   """Zodiac returns a zodiac sign of horse when given 1930"""
-  check50.run("./zodiac").stdin("1930").stdout("(Your zodiac sign is the)? [Hh]orse.?\n?")
+  check50.run("./zodiac").stdin("1930").stdout("(Your zodiac sign is the)? [Hh]orse.?\n?", regex=True)
 
 
 @check50.check(compiles)
 def returnsmonkey():
   """Zodiac returns a zodiac sign of monkey when given 1992"""
-  check50.run("./zodiac").stdin("1992").stdout("(Your zodiac sign is the)? [Mm]onkey.?\n?")
+  check50.run("./zodiac").stdin("1992").stdout("(Your zodiac sign is the)? [Mm]onkey.?\n?", regex=True)
