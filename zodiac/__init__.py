@@ -26,6 +26,7 @@ def returns1924rat():
 
 @check50.check(compiles)
 def rejects1920():
+    """Zodiac rejects a date before 1924"""
     check50.run("./zodiac").stdin("1920").reject()
     
     
