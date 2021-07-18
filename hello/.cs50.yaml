@@ -1,2 +1,7 @@
 check50:
-  true
+  files: &check50_files
+    - !exclude "*"
+    - !require divisible.c
+
+submit50:
+  files: *check50_files
