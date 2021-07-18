@@ -10,10 +10,10 @@ def exists():
 @check50.check()
 def compiles():
     """hello.c compiles"""
-    check50.c.compile("hello.c")
+    check50.c.compile("hello.c", lcs50=True)
 
 
 @check50.check(compiles)
-def printhello():
-    """running ./hello returns "Hello, world" """
-    check50.run("./hello").stdout("[Hh]ello[,]? [Ww]orld!?\n", regex=True).exit(0)
+def anna():
+    """Hello responds to name Anna"""
+    check50.run("./hello").stdin("Anna").stdout("[Hh]ello,? Anna.?(\n)?", regex=True)
