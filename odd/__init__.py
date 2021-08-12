@@ -5,7 +5,7 @@ import re
 @check50.check()
 def exists():
     """odd.c exists"""
-    check50.exists("runoff.c")
+    check50.exists("odd.c")
     check50.include("testing.c")
 
 
