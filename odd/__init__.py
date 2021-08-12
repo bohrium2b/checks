@@ -17,7 +17,7 @@ def compiles():
     testing = open("testing.c").read()
     with open("odd_test.c", "w") as f:
         f.write(odd)
-        f.write("\ \ \ \ return 0;\n")
+        f.write("    return 0;\n")
         f.write("\n")
         f.write(testing)
     check50.c.compile("odd_test.c", lcs50=True)
