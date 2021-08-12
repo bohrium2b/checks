@@ -8,7 +8,7 @@ int main(int argc, string argv[])
 {
     int number = atoi(argv[1]);
     bool out = isodd(number);
-    if (out == TRUE)
+    if (out == true)
     {
         printf("Odd\n");
     }
